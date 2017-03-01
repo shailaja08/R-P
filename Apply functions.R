@@ -6,3 +6,9 @@ list
 lapply(list,sum)
 ##Type -2 -->Sapply (function applied on list and provide simplified result)
 sapply(list,sum)
+## Type --3 Tapply(use to apply function on a factor of R object)
+age <- c(23,24,25,25,26)
+gender <- c("m","f","m","f","f")
+fac_gen <- as.factor(gender)
+fac_gen
+tapply(age,fac_gen,mean)
