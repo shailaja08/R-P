@@ -34,3 +34,16 @@ lbls1
 pie(slice,labels = lbls1,col=rainbow(4),main="Percentage pie chart")
 ###---------Pie 3D
 pie3D(slice,labels = lbls1,col=rainbow(4),main="Percentage 3 D pie chart",explode = 0.0)
+##Type 3-----Histogram------has x,y axis---bars of different height
+hist(mtcars$mpg)
+hist(mtcars$mpg,breaks=8,col=c("lightgreen"))
+
+
+##Type 4-------------Kernal Density plot------------
+density <- density(mtcars$mpg)
+density
+plot(density)
+plot(density,main="Kernal Density Plot")
+polygon(density,col="skyblue",border="black")
+
+## Type 5------Box Plot Chart------
