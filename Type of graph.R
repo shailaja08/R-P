@@ -46,4 +46,17 @@ plot(density)
 plot(density,main="Kernal Density Plot")
 polygon(density,col="skyblue",border="black")
 
-## Type 5------Box Plot Chart------
+## Type 5------Line Chart-------(we create line chart when we have time)
+month <- c(1:9)
+month
+weight <- seq(2.5,5,by=0.3)
+weight
+plot(month,weight,main="babt weigth")
+plot(month,weight,main="babt weigth",type="b") ## Give type = b for making a line chart
+
+
+## Type 6------Box Plot Chart------
+vec <- c(3,4,5,3,2,5,6,4,3,7)
+summary(vec)
+boxplot(vec,varwidth = TRUE ) ## to increase the width give the varwidth= TRUE
+--
