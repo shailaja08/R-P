@@ -21,7 +21,7 @@ barplot(count,main= "Simple Stacked Bar Chart",xlab="number of gear",
 barplot(count,main= "Simple Stacked Bar Chart",xlab="number of gear",
         col=c("Yellow","red","green"),legend=rownames(count),beside=TRUE) ##### Use Beside to have bar next to each other
    
-##Type 2---------------Pie Chart(Install Package plotrix-------------------
+##Type 2---------------Pie Chart(Install Package plotrix------------------
 library(plotrix)
 slice <- c(10,24,29,47)
 lbls <- c("US","IND","UK","PAK")
